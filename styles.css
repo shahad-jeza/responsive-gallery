@@ -1,0 +1,38 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(243, 243, 243)
+}
+
+.gallery{
+align-items: center;
+border-radius: 20px;
+padding: 10px;
+margin: 20px;
+display: flex;
+flex-direction: row; 
+flex-wrap: wrap;
+padding-left: 100px;
+background-color: white;
+box-shadow:10px 12px 52px -13px rgba(118,114,114,0.75);
+-webkit-box-shadow: 10px 12px 52px -13px rgba(118,114,114,0.75);
+-moz-box-shadow: 10px 12px 52px -13px rgba(118,114,114,0.75);
+
+gap: 20px;
+}
+
+.gallery img{
+  margin: 10px;
+}
+
+h2,p{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .gallery{
+    flex-direction: column; /* makes a one column layout instead of a two-column layout */
+  }
+}
